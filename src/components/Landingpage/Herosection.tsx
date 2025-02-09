@@ -9,7 +9,7 @@ import Chatbot from './Chatbot'
 
 
 const Herosection = () => {
-    const chatbotActive = useSelector((state:any)=>state.registeractive.chatbotActive)
+    const ischatbotActive = useSelector((state:any)=>state.registeractive.chatbotActive)
     const dispatch = useDispatch()
     return (
         <section className="w-full h-[450px] sm:h-[350px] relative flex justify-center items-center flex-col p-5 md:p-10">
@@ -32,7 +32,7 @@ const Herosection = () => {
             <div className="chatbot fixed right-5 bottom-10 md:top-56 z-30" 
             
             >
-                {chatbotActive && <Chatbot />}
+                {ischatbotActive && <Chatbot />}
                 <img src="./chatbot.gif" alt="chatbot" onClick={()=>dispatch(chatbotActive(true))} />
             </div>
         </section>

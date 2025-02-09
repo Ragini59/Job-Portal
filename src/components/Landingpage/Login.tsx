@@ -44,7 +44,7 @@ const Login = () => {
     }
   return (
    <div className="formcontainer w-[500px] bg-[#af8dff65] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-50 p-10 rounded-lg backdrop-blur-md">
-     <GiCrossMark className="text-3xl text-white cursor-pointer hover:text-red-500 absolute right-4 top-4"onClick={()=>dispatch(forgotpasswordActive(false))} />
+     <GiCrossMark className="text-3xl text-white cursor-pointer hover:text-red-500 absolute right-4 top-4"onClick={()=>dispatch(loginActive(false))} />
      <h2 className="text-center font-bold text-white text-3xl mb-5">Login</h2>
      <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

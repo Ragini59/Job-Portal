@@ -9,7 +9,7 @@ import Jobprovideraccount from './Jobprovideraccount';
 
 
 const Loginwrapper = () => {
-    const isactive = useSelector((state: any) => state.registeractive.isActivelogin);
+    const isactive = useSelector((state: any) => state.registeractive);
     // console.log(isloginactive);
   return (
     <div>
